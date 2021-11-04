@@ -1,0 +1,7 @@
+on: push
+name: test
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+    - run: echo '${{toJSON(github)}}'
