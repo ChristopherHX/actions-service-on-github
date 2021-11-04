@@ -1,0 +1,14 @@
+on: pull_request_target
+name: PR
+jobs:
+  test:
+    runs-on: linux
+    strategy:
+      matrix:
+        x:
+        - a
+        - b
+        - c: Hi
+          z: Bye
+    steps:
+    - run: echo '${{toJSON(matrix)}}'
