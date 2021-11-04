@@ -12,3 +12,4 @@ jobs:
           z: Bye
     steps:
     - run: echo '${{toJSON(matrix)}}'
+    - run: echo '${{toJSON(github)}}'
