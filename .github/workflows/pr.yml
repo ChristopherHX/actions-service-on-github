@@ -13,3 +13,4 @@ jobs:
     steps:
     - run: echo '${{toJSON(matrix)}}'
     - run: echo '${{toJSON(github)}}'
+    - run: echo Update
