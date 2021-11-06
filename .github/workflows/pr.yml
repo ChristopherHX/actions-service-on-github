@@ -10,6 +10,10 @@ jobs:
         - b
         - c: Hi
           z: Bye
+        exclude:
+        - x:
+            c: Hi
+            z: Bye
     steps:
     - run: echo '${{toJSON(matrix)}}'
     - run: echo '${{toJSON(github)}}'
