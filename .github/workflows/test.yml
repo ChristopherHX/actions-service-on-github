@@ -5,5 +5,5 @@ jobs:
     runs-on: self-hosted
     steps:
     - run: echo '${{toJSON(github)}}'
-    - run: sleep 5
+    - run: sleep 3
     - run: echo '${{toJSON(matrix)}}'
