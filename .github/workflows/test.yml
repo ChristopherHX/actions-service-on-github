@@ -8,6 +8,7 @@ jobs:
     - run: echo "Hello World"
     - run: echo '${{toJSON(github)}}'
     - run: echo '${{toJSON(strategy)}}'
+    - run: sleep 3
     - run: echo '${{toJSON(matrix)}}'
     - run: echo '${{toJSON(needs)}}'
   test2:
