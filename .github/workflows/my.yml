@@ -11,7 +11,7 @@ jobs:
     - run: exit 0
   y:
     uses: ChristopherHX/ghat2/.github/workflows/main.yml@reuse
-    with:
-     x: true
-     y: "Hi"
+#     with:
+#      x: true
+#      y: "Hi"
      
