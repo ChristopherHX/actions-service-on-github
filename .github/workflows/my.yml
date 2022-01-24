@@ -1,6 +1,8 @@
 name: my
 on:
 - push
+permissions:
+  contents: read
 jobs:
   x:
     runs-on: self-hosted
