@@ -8,6 +8,9 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: ChristopherHX/ghat2@private-action
+    - uses: ChristopherHX/ghat2@private-action
+    - uses: ChristopherHX/ghat2@private-action
+    - uses: ChristopherHX/ghat2@private-action
     - run: exit 0
   y:
     uses: ChristopherHX/ghat2/.github/workflows/main.yml@7e3065f3434b32ae6bed336dfb0c93f1fd5aae1e
