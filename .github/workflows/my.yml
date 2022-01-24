@@ -9,3 +9,5 @@ jobs:
     steps:
     - uses: ChristopherHX/ghat2@private-action
     - run: exit 0
+  y:
+    uses: ChristopherHX/ghat2/blob/reuse/.github/workflows/main.yml@reuse
