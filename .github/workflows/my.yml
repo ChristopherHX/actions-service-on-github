@@ -1,0 +1,9 @@
+name: my
+on:
+- push
+jobs:
+  x:
+    runs-on: self-hosted
+    steps:
+    - uses: ChristopherHX/ghat2@main
+    - run: exit 0
