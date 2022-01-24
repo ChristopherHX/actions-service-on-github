@@ -7,5 +7,5 @@ jobs:
   x:
     runs-on: self-hosted
     steps:
-    - uses: ChristopherHX/ghat2/.github/actions/main.yml@main
+    - uses: ChristopherHX/ghat2@private-action
     - run: exit 0
