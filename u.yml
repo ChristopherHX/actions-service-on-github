@@ -1,0 +1,30 @@
+on: workflow_call
+jobs:
+  x:
+    strategy:
+      matrix:
+        a:
+        - 0
+        - 1
+    steps:
+    - run: exit 0
+  u:
+    needs:
+    - x
+    strategy:
+      matrix:
+        a:
+        - 0
+        - 1
+    steps:
+    - run: exit 0
+  v:
+    needs:
+    - u
+    strategy:
+      matrix:
+        a:
+        - 0
+        - 1
+    steps:
+    - run: exit 0
