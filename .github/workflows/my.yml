@@ -19,4 +19,4 @@ jobs:
      x: true
      y: "Hi"
   k:
-    uses: u.yml
+    uses: ./u.yml
