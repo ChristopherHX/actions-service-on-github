@@ -18,6 +18,7 @@ jobs:
         a:
         - 0
         - 1
+        - Hello World
     steps:
     - run: exit 0
   v:
