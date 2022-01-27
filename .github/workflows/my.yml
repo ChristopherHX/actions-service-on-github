@@ -2,7 +2,7 @@ name: my
 on:
 - push
 permissions:
-  contents: read
+  contents: write
 jobs:
   x:
     runs-on: self-hosted
