@@ -18,3 +18,5 @@ jobs:
     - run: echo '${{toJSON(matrix)}}'
     - run: echo '${{toJSON(github)}}'
     - run: echo Update
+  f:
+    uses: ./.github/workflows/test.yml
