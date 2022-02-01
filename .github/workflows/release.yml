@@ -1,0 +1,12 @@
+on: release
+name: test release
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+    - run: echo '${{toJSON(github)}}'
+    - run: echo '${{toJSON(strategy)}}'
+    - run: echo '${{toJSON(matrix)}}'
+    - run: echo '${{toJSON(needs)}}'
+    - run: echo '${{toJSON(job)}}'
+    - run: echo '${{toJSON(runner)}}'
