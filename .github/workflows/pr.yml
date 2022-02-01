@@ -1,5 +1,5 @@
 on: pull_request
-name: PR
+name: PR X
 jobs:
   f:
     uses: ./.github/workflows/test.yml
