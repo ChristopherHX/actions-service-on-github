@@ -2,6 +2,7 @@ on: pull_request
 name: PR
 jobs:
   test:
+    if: false
     runs-on: linux
     strategy:
       matrix:
