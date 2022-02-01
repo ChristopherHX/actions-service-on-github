@@ -1,18 +1,5 @@
-on: pull_request_target
-name: PR
+on: pull_request
+name: PR X
 jobs:
-  test:
-    runs-on: linux
-    strategy:
-      matrix:
-        x:
-        - a
-        - b
-        - c: Hi
-          z: Bye
-    steps:
-    - run: echo '${{toJSON(matrix)}}'
-    - run: echo '${{toJSON(github)}}'
-    - run: echo Update
   f:
     uses: ./.github/workflows/test.yml

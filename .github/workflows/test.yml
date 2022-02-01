@@ -4,6 +4,40 @@ jobs:
   test:
     runs-on: self-hosted
     steps:
+    - run: echo "Hello World"
     - run: echo '${{toJSON(github)}}'
+    - run: echo '${{toJSON(strategy)}}'
     - run: sleep 3
     - run: echo '${{toJSON(matrix)}}'
+    - run: echo '${{toJSON(needs)}}'
+  test2:
+    strategy:
+      matrix:
+        x:
+        - test1: First
+          test2: Second
+        - test1: First
+          test2: Third
+        - test1: Second
+          test2: Second
+        exclude:
+        - x:
+            test1: Second
+            test2: Second
+    needs:
+    - test
+    runs-on: self-hosted
+    steps:
+    - run: echo "Hello World"
+    - run: echo '${{toJSON(github)}}'
+    - run: echo '${{toJSON(strategy)}}'
+    - run: echo '${{toJSON(matrix)}}'
+    - run: echo '${{toJSON(needs)}}'
+  test3:
+    runs-on: self-hosted
+    steps:
+    - run: echo "Hello World 2"
+    - run: echo '${{toJSON(github)}}'
+    - run: echo '${{toJSON(strategy)}}'
+    - run: echo '${{toJSON(matrix)}}'
+    - run: echo '${{toJSON(needs)}}'
