@@ -6,7 +6,7 @@ jobs:
   command:
     if: |-
       ${{ startswith(github.event.comment.body, '/') && !contains(github.event.comment.body, '
-      ' }}
+      ') }}
     runs-on: self-hosted
     steps:
       - uses: actions/github-script@v5
