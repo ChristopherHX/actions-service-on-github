@@ -1,0 +1,8 @@
+on: push
+jobs:
+  test:
+    runs-on:
+    - self-hosted
+    - freebsd
+    steps:
+    - run: echo Hello World
