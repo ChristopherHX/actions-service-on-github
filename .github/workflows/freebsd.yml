@@ -6,3 +6,4 @@ jobs:
     - freebsd
     steps:
     - run: echo Hello World
+    - run: whoami
