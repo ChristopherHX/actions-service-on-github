@@ -1,17 +1,8 @@
 on:
-  issues:
-    types: [opened]
+  push:
 
 jobs:
-  comment:
+  test:
     runs-on: self-hosted
     steps:
-      - uses: actions/github-script@v5
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '👋 Thanks for reporting!, this is just a test repository'
-            })
+      - run: echo '${{ tojson(github) }}'
